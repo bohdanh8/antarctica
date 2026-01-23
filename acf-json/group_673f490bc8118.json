@@ -8,7 +8,7 @@
             "name": "text_and_media",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='\/wp-content\/uploads\/prosek-assets\/acf-images\/content-section.jpg' style='width:100%' alt='' \/>",
+            "instructions": "<img src='\/wp-content\/uploads\/prosek-assets\/acf-images\/content-section.jpg' style='width:100%;display:none!important' alt='' \/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -884,5 +884,5 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757434228
+    "modified": 1757439229
 }
