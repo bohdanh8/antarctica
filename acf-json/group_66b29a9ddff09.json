@@ -1,0 +1,114 @@
+{
+  "key": "group_66b29a9ddff09",
+  "title": "Menu Item",
+  "fields": [
+    {
+      "key": "field_66b29a9ec5bc4",
+      "label": "Featured news",
+      "name": "featured_news",
+      "aria-label": "",
+      "type": "repeater",
+      "instructions": "Applicable only for top level parent items",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "wpml_cf_preferences": 1,
+      "layout": "row",
+      "pagination": 0,
+      "min": 0,
+      "max": 0,
+      "collapsed": "",
+      "button_label": "Add News",
+      "rows_per_page": 20,
+      "sub_fields": [
+        {
+          "key": "field_66b29ab9c5bc5",
+          "label": "Featured post",
+          "name": "featured_post",
+          "aria-label": "",
+          "type": "post_object",
+          "instructions": "",
+          "required": 0,
+          "conditional_logic": 0,
+          "wrapper": {
+            "width": "",
+            "class": "",
+            "id": ""
+          },
+          "post_type": [
+            "post"
+          ],
+          "post_status": [
+            "publish"
+          ],
+          "taxonomy": "",
+          "return_format": "id",
+          "multiple": 0,
+          "allow_null": 0,
+          "bidirectional": 0,
+          "ui": 1,
+          "bidirectional_target": [],
+          "parent_repeater": "field_66b29a9ec5bc4",
+          "wpml_cf_preferences": 1
+        }
+      ]
+    },
+    {
+      "key": "field_67484abbc4f51",
+      "label": "Image",
+      "name": "image",
+      "aria-label": "",
+      "type": "image",
+      "instructions": "",
+      "required": 0,
+      "conditional_logic": 0,
+      "wrapper": {
+        "width": "",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "library": "all",
+      "min_width": "",
+      "min_height": "",
+      "min_size": "",
+      "max_width": "",
+      "max_height": "",
+      "max_size": "",
+      "mime_types": "",
+      "allow_in_bindings": 0,
+      "preview_size": "medium"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "nav_menu_item",
+        "operator": "==",
+        "value": "location\/primary"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "acf_after_title",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": [
+    "the_content",
+    "excerpt",
+    "revisions",
+    "slug",
+    "author",
+    "format",
+    "send-trackbacks"
+  ],
+  "active": true,
+  "description": "",
+  "show_in_rest": 0,
+  "modified": 1732791034
+}

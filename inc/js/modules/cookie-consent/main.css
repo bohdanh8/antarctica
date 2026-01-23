@@ -1,0 +1,13 @@
+/*
+ * *** DO NOT EDIT ***
+ */
+
+ .cookie-consent-banner:not(.show) {
+    @apply translate-y-full opacity-0;
+}
+.cookie-consent-banner.show {
+    @apply translate-y-0 opacity-100;
+}
+body.modal-open .cookie-consent-banner {
+    @apply pr-[var(--scrollbar-width)];
+}

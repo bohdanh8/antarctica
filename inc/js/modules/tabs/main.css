@@ -1,0 +1,13 @@
+/*
+ * *** DO NOT EDIT ***
+ */
+
+ .tab-pane:not(.active) {
+    @apply hidden;
+}
+.tab-pane.active {
+    /* @apply block; */
+}
+.tab-panes {
+    @apply overflow-hidden;
+}

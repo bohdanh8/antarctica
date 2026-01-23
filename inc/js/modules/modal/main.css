@@ -1,0 +1,45 @@
+/*
+ * *** DO NOT EDIT ***
+ */
+
+body > .modal-backdrop:not(.active),
+body .modal-wrapper:not(.active),
+body .modal:not(.active) {
+    @apply hidden !important;
+}
+
+body .modal-wrapper.active.center {
+    @apply flex;
+}
+body .modal-wrapper.active.center > .modal {
+    @apply m-auto;
+}
+
+body .modal-wrapper {
+    @apply fixed left-0 top-0 z-[1055] h-full w-full overflow-y-auto overflow-x-hidden outline-0;
+}
+
+body > .modal-backdrop {
+    @apply fixed left-0 top-0 z-[1050] min-h-screen w-screen bg-[--modal-backdrop-color];
+}
+
+body .modal-wrapper.fade,
+body > .modal-backdrop.fade {
+    @apply transition-opacity duration-[300ms] ease-in !important;
+}
+
+body .modal-wrapper.keep-hidden,
+body > .modal-backdrop.keep-hidden {
+    @apply invisible !important;
+}
+
+body > .modal-backdrop:not(.show),
+.modal-wrapper:not(.show) {
+    @apply opacity-0;
+}
+body > .modal-backdrop.show {
+    @apply opacity-[--modal-backdrop-opacity];
+}
+.modal-wrapper.show {
+    @apply opacity-100 backdrop-blur-[--modal-backdrop-blur];
+}

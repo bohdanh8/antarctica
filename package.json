@@ -1,0 +1,44 @@
+{
+    "name": "prosekwptheme",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "shx cp -n inc/js/webpack-sample.config.js config/webpack.config.js && shx cp -n inc/debug-sample-config.php config/debug-config.php",
+        "clean": "rimraf --glob 'dist/*'",
+        "dev": "npm run clean && webpack --config inc/js/webpack.config.dev.js",
+        "build": "npm run clean && cross-env NODE_ENV=production webpack --config inc/js/webpack.config.prod.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@prettier/plugin-php": "^0.20.1",
+        "@studio-freight/lenis": "^1.0.26",
+        "accordion-js": "^3.3.4",
+        "autoprefixer": "^10.4.16",
+        "browser-sync": "^2.29.3",
+        "browser-sync-webpack-plugin": "^2.3.0",
+        "copy-webpack-plugin": "^11.0.0",
+        "cross-env": "^7.0.3",
+        "css-loader": "^6.8.1",
+        "css-minimizer-webpack-plugin": "^5.0.1",
+        "filemanager-webpack-plugin": "^8.0.0",
+        "gsap": "npm:@gsap/shockingly@^3.12.2",
+        "mini-css-extract-plugin": "^2.7.6",
+        "postcss": "^8.4.31",
+        "postcss-loader": "^7.3.3",
+        "prettier": "^3.0.3",
+        "prettier-plugin-tailwindcss": "^0.5.5",
+        "rimraf": "^5.0.5",
+        "shx": "^0.3.4",
+        "swiper": "^10.3.1",
+        "tailwindcss": "^3.4.17",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4",
+        "webpack-merge": "^5.9.0"
+    },
+    "dependencies": {
+        "@vimeo/player": "^2.29.0"
+    }
+}

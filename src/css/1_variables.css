@@ -1,0 +1,54 @@
+:root {
+	/* Colours */
+	--prosek-orange: #f24815;
+	--prosek-light-gray: #f9f9f9;
+	--prosek-dull-gold: #e4dcc3;
+
+	/* Container Padding */
+
+	--container-top-padding: 40px;
+	--container-bottom-padding: 40px;
+	--container-left-padding: 20px;
+	--container-right-padding: 20px;
+
+	--container-sm-top-padding: 60px;
+	--container-sm-bottom-padding: 60px;
+	--container-sm-left-padding: 40px;
+	--container-sm-right-padding: 40px;
+
+	--container-md-top-padding: 80px;
+	--container-md-bottom-padding: 80px;
+	--container-md-left-padding: 72px;
+	--container-md-right-padding: 72px;
+
+	/* Offset */
+	--container-h1-offset: 15px;
+	--container-h2-offset: 15px;
+	--container-h3-offset: 0px;
+	--container-h4-offset: 0px;
+	--container-h5-offset: 0px;
+	--container-h6-offset: 0px;
+
+	/* Image Zoom */
+	--image-zoom: 1.05;
+
+	/* Paragraph */
+	--paragraph-bottom-margin: 1rem;
+
+	/* Section */
+	--section-width: 1680px;
+	--section-horizontal-padding: var(--container-left-padding);
+	--side-offset: max(calc((100% - var(--section-width)) / 2 + var(--section-horizontal-padding)), var(--section-horizontal-padding));
+}
+
+@media only screen and (min-width: 641px) {
+	:root {
+		--section-horizontal-padding: var(--container-sm-left-padding);
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	:root {
+		--section-horizontal-padding: var(--container-md-left-padding);
+	}
+}

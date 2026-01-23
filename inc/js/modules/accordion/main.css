@@ -1,0 +1,11 @@
+/*
+ * *** DO NOT EDIT ***
+ */
+
+ .accordion-item:not(.is-active) .accordion-body {
+    @apply invisible;
+}
+.accordion-body {
+    @apply overflow-hidden;
+    transition-property: height, visibility;
+}

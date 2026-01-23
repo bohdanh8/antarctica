@@ -1,0 +1,82 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.wordWrap": "on",
+    "emmet.preferences": {
+        "filter.commentAfter": "<!-- [#ID][.CLASS] -->"
+    },
+    "emmet.syntaxProfiles": {
+        // Enable XHTML dialect for HTML syntax
+        // “html”: “xhtml”
+        "html": {
+            "filters": "html, c"
+        }
+    },
+    "php-docblocker.extra": ["@author Prosek Partners", " ", "@since 1.0.0 Initial release"],
+    "php-docblocker.functionTemplate": {
+        "message": {},
+        "extra": {
+            "gapAfter": true
+        },
+        "param": {
+            "gapAfter": true
+        },
+        "return": {
+            "gapAfter": true
+        }
+    },
+    "php-docblocker.useShortNames": true,
+    "php-docblocker.alignParams": true,
+    "php-docblocker.alignReturn": true,
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "dist": true,
+        ".github": true,
+        ".vscode": true,
+        "bin": true
+    },
+    "intelephense.stubs": ["apache", "bcmath", "bz2", "calendar", "com_dotnet", "Core", "ctype", "curl", "date", "dba", "dom", "enchant", "exif", "FFI", "fileinfo", "filter", "fpm", "ftp", "gd", "gettext", "gmp", "hash", "iconv", "imap", "intl", "json", "ldap", "libxml", "mbstring", "meta", "mysqli", "oci8", "odbc", "openssl", "pcntl", "pcre", "PDO", "pdo_ibm", "pdo_mysql", "pdo_pgsql", "pdo_sqlite", "pgsql", "Phar", "posix", "pspell", "readline", "Reflection", "session", "shmop", "SimpleXML", "snmp", "soap", "sockets", "sodium", "SPL", "sqlite3", "standard", "superglobals", "sysvmsg", "sysvsem", "sysvshm", "tidy", "tokenizer", "xml", "xmlreader", "xmlrpc", "xmlwriter", "xsl", "Zend OPcache", "zip", "zlib", "wordpress"],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#415a77",
+        "activityBar.background": "#415a77",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#3e222f",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#415a77",
+        "statusBar.background": "#2f4156",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#415a77",
+        "statusBarItem.remoteBackground": "#2f4156",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#2f4156",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#2f415699",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#2f4156"
+}

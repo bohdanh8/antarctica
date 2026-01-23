@@ -1,0 +1,62 @@
+# The SSH_USER is the SSH Username for pro-dev-admin
+# The THEME_FOLDER is the name of the theme folder that lives at the wp-content/themes
+#
+# Ex: /home/[PROJECT_FOLDER]/htdocs/wp-content/themes/[THEME_FOLDER]
+
+env:
+  SSH_USER: s46716a5a38fc47f0
+  THEME_FOLDER: starter-wp-theme
+
+# -----------------------------------------------------------
+#               DO NOT EDIT ANYTHING BELOW THIS
+# -----------------------------------------------------------
+
+# This is a basic workflow that is triggered by push to main branch.
+
+name: Build project and transfer files to the staging server
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  push:
+    branches:
+      - main
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build-deploy"
+  build-deploy:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "21.5.0"
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: Create Theme Folder
+        uses: fifsky/ssh-action@master
+        with:
+          command: |
+            if [ ! -d "/srv/htdocs/wp-content/themes/${{ env.THEME_FOLDER }}" ]; then
+              mkdir "/srv/htdocs/wp-content/themes/${{ env.THEME_FOLDER }}"
+            fi
+          host: "${{ secrets.PRO_DEV_ADMIN_PRESSABLE_SSH_HOST }}"
+          user: "${{ env.SSH_USER }}"
+          key: ${{ secrets.PRO_DEV_ADMIN_PRESSABLE_SSH_KEY }}
+          args: "-tt"
+      - name: Install NPM
+        run: npm install
+      - name: Build Project
+        run: npm run build
+      - name: Transfer Files to staging site.
+        uses: up9cloud/action-rsync@v1.1
+        env:
+          HOST: "${{ secrets.PRO_DEV_ADMIN_PRESSABLE_SSH_HOST }}"
+          KEY: ${{ secrets.PRO_DEV_ADMIN_PRESSABLE_SSH_KEY }}
+          TARGET: "/srv/htdocs/wp-content/themes/${{ env.THEME_FOLDER }}"
+          USER: "${{ env.SSH_USER }}"
+          SOURCE: "./dist/"
+          ARGS: -ah --delete-before --exclude='.*'

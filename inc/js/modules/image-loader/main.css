@@ -1,0 +1,14 @@
+/*
+ * *** DO NOT EDIT ***
+ */
+
+.image-wrapper {
+    @apply h-full overflow-hidden;
+}
+.image-wrapper img {
+    @apply h-full w-full object-cover object-center !important;
+    @apply transform-gpu bg-cover bg-center blur-[1.25rem] transition duration-[600ms];
+}
+.image-wrapper img.loaded {
+    @apply blur-0;
+}
