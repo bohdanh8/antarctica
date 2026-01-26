@@ -1,0 +1,1 @@
+<?php get_component("four_columns_info");

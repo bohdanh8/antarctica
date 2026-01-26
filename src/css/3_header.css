@@ -43,6 +43,13 @@
 #mobile-menu {
 	@apply top-[--header-height];
 }
+#mobile-menu li {
+
+}
+
+#mobile-menu li a {
+	@apply !font-light text-navy-blue;
+}
 
 .slide-in {
 	@apply top-0;

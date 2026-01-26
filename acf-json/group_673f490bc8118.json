@@ -856,6 +856,113 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "field_6977997f3bcfc",
+            "label": "Four Columns Info",
+            "name": "four_columns_info",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "<img src='\/wp-content\/uploads\/prosek-assets\/acf-images\/content-section.jpg' style='width:100%' alt='' \/>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_6977998c3bcfd",
+                    "label": "Columns",
+                    "name": "columns",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "row",
+                    "pagination": 0,
+                    "min": 4,
+                    "max": 4,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_697799a63bcfe",
+                            "label": "Heading 1",
+                            "name": "heading_first",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_6977998c3bcfd"
+                        },
+                        {
+                            "key": "field_697799ae3bcff",
+                            "label": "Heading 2",
+                            "name": "heading_second",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_6977998c3bcfd"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_697799bf3bd00",
+                    "label": "Text Area Under Columns",
+                    "name": "text_area_under_columns",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -884,5 +991,6 @@
     "active": false,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757439229
+    "display_title": "",
+    "modified": 1769445834
 }

@@ -1,6 +1,6 @@
 <header id="header" class="relative z-50 group/header-menu">
 	<nav class="header-inner duration-300 transition-[top] bg-white">
-		<div class="container py-8 max-w-full relative z-20">
+		<div class="container py-14 max-w-full relative z-20">
 			<div class="flex justify-between max-lg:items-center w-full gap-10">
 				<a href="<?php echo home_url(); ?>">
 					<?php echo get_start_logo(); ?>
@@ -15,9 +15,6 @@
 						?>
 					</div>
 
-					<?php get_component( "search-form", [
-						'is_compact' => true,
-					] ); ?>
 				</div>
 				<!-- Mobile menu button -->
 				<button type="button"

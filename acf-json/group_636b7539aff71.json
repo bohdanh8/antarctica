@@ -8,7 +8,7 @@
             "name": "home_page_-_section_a",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='https:\/\/prosek-wp-starter-staging.local\/wp-content\/uploads\/prosek-assets\/acf-images\/home_page_-_section_a.png?v=1755161146' style='width:100%' alt=''\/>",
+            "instructions": "<img src='https:\/\/antarctica.local\/wp-content\/uploads\/prosek-assets\/acf-images\/home_page_-_section_a.png?v=1740674599' style='width:100%' alt=''\/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -87,12 +87,80 @@
             ]
         },
         {
+            "key": "field_69778c84c7b31",
+            "label": "Columns",
+            "name": "columns",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 4,
+            "max": 4,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_69778ca9c7b32",
+                    "label": "Heading 1",
+                    "name": "heading_first",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_69778c84c7b31"
+                },
+                {
+                    "key": "field_69778ce8c7b33",
+                    "label": "Heading 2",
+                    "name": "heading_second",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_69778c84c7b31"
+                }
+            ]
+        },
+        {
             "key": "field_64da34ecd4a4c",
-            "label": "Home Page - Text and Media",
-            "name": "home_page_-_text_and_media",
+            "label": "Home Page - Text and Image",
+            "name": "home_page_-_text_and_image",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='https:\/\/prosek-wp-starter-staging.local\/wp-content\/uploads\/prosek-assets\/acf-images\/home_page_-_text_and_image.png?v=1755161146' style='width:100%' alt=''\/>",
+            "instructions": "<img src='https:\/\/antarctica.local\/wp-content\/uploads\/prosek-assets\/acf-images\/home_page_-_text_and_image.png?v=1757433088' style='width:100%' alt=''\/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -148,8 +216,8 @@
                 },
                 {
                     "key": "field_673f4ce9c1698",
-                    "label": "Text and Media Fields",
-                    "name": "text_and_media_fields",
+                    "label": "Text and Image Fields",
+                    "name": "text_and_image_fields",
                     "aria-label": "",
                     "type": "clone",
                     "instructions": "",
@@ -164,11 +232,32 @@
                         "field_673f493e3362f"
                     ],
                     "display": "seamless",
-                    "layout": "block",
+                    "layout": "",
                     "prefix_label": 0,
                     "prefix_name": 0
                 }
             ]
+        },
+        {
+            "key": "field_69778cf2c7b34",
+            "label": "Text Area Under Columns",
+            "name": "text_area_under_columns",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
         },
         {
             "key": "field_67498edb6dc49",
@@ -176,7 +265,7 @@
             "name": "home_page_-_team_section",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='https:\/\/prosek-wp-starter-staging.local\/wp-content\/uploads\/prosek-assets\/acf-images\/home_page_-_team_section.png?v=1755161146' style='width:100%' alt=''\/>",
+            "instructions": "<img src='https:\/\/antarctica.local\/wp-content\/uploads\/prosek-assets\/acf-images\/home_page_-_team_section.png?v=1752236744' style='width:100%' alt=''\/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -260,7 +349,7 @@
             "name": "home_page_-_accordion_section",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='https:\/\/prosek-wp-starter-staging.local\/wp-content\/uploads\/prosek-assets\/acf-images\/home_page_-_accordion_section.png?v=1755161146' style='width:100%' alt=''\/>",
+            "instructions": "<img src='https:\/\/antarctica.local\/wp-content\/uploads\/prosek-assets\/acf-images\/home_page_-_accordion_section.png?v=1752236919' style='width:100%' alt=''\/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -344,7 +433,7 @@
             "name": "home_page_-_news_section",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='https:\/\/prosek-wp-starter-staging.local\/wp-content\/uploads\/prosek-assets\/acf-images\/home_page_-_news_section.png?v=1755161146' style='width:100%' alt=''\/>",
+            "instructions": "<img src='https:\/\/antarctica.local\/wp-content\/uploads\/prosek-assets\/acf-images\/home_page_-_news_section.png?v=1752237019' style='width:100%' alt=''\/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -428,7 +517,7 @@
             "name": "home_page_-_two_column_text_section",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='https:\/\/prosek-wp-starter-staging.local\/wp-content\/uploads\/prosek-assets\/acf-images\/home_page_-_two_column_text_section.png?v=1755161146' style='width:100%' alt=''\/>",
+            "instructions": "<img src='https:\/\/antarctica.local\/wp-content\/uploads\/prosek-assets\/acf-images\/home_page_-_two_column_text_section.png?v=1752237138' style='width:100%' alt=''\/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -505,6 +594,90 @@
                     "prefix_name": 0
                 }
             ]
+        },
+        {
+            "key": "field_69779a70a3bb9",
+            "label": "Four Columns Info",
+            "name": "four_columns_info",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "<img src='\/wp-content\/uploads\/prosek-assets\/acf-images\/content-section.jpg' style='width:100%' alt='' \/>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_69779a7ca3bba",
+                    "label": "Enable",
+                    "name": "enable",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "field_634448f9c876c"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                },
+                {
+                    "key": "field_69779a93a3bbb",
+                    "label": "Settings",
+                    "name": "settings",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "field_6346db9b61643"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                },
+                {
+                    "key": "field_69779aa5a3bbc",
+                    "label": "Four Columns Info",
+                    "name": "four_columns_info",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "clone": [
+                        "field_6977997f3bcfc"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
         }
     ],
     "location": [
@@ -533,5 +706,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757433875
+    "display_title": "",
+    "modified": 1769446071
 }

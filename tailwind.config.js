@@ -27,13 +27,22 @@ module.exports = {
             '3xl': '1921px',
         },
         fontFamily: {
-            sans: ['"mark w01"', 'verdana'],
+            sans: ['"Haffer"', 'sans-serif'],
         },
         extend: {
             colors: {
                 'prosek-orange': 'var(--prosek-orange)',
                 'prosek-dull-gold': 'var(--prosek-dull-gold)',
                 'prosek-light-gray': 'var(--prosek-light-gray)',
+                'navy-blue': 'var(--navy-blue)',
+                'bright-blue': 'var(--bright-blue)',
+                'off-black': 'var(--off-black)',
+                'light-blue': 'var(--light-blue)',
+                'divider-line-blue': 'var(--divider-line-blue)',
+                'medium-gray': 'var(--medium-gray)',
+                'success': 'var(--success)',
+                'alert': 'var(--alert)',
+                'disabled': 'var(--disabled)',
             },
             height: {
                 'full-body': 'calc(100vh - var(--header-height) - var(--wp-admin--admin-bar--height, 0px))',

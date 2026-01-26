@@ -4,6 +4,20 @@
 	--prosek-light-gray: #f9f9f9;
 	--prosek-dull-gold: #e4dcc3;
 
+	--navy-blue: #071359;
+	--bright-blue: #2c8cff;
+	--off-black: #151515;
+	--light-blue: #2b656a;
+	--divider-line-blue: #53b7bf;
+	--divider-light-line: #c7e0eb;
+	--medium-gray: #707070;
+	--success: #27745e;
+	--alert: #b81429;
+	--disabled: rgba(40, 40, 40, 0.2);
+
+	--gradient-45: linear-gradient(225deg,rgba(7, 19, 89, 1) 0%, rgba(13, 41, 119, 1) 12%, rgba(24, 76, 167, 1) 33%, rgba(32, 104, 205, 1) 53%, rgba(39, 123, 232, 1) 71%, rgba(42, 135, 249, 1) 88%, rgba(44, 140, 255, 0.92) 100%);
+	--gradient: linear-gradient(90deg,rgba(7, 19, 89, 1) 0%, rgba(13, 41, 119, 1) 12%, rgba(24, 76, 167, 1) 33%, rgba(32, 104, 205, 1) 53%, rgba(39, 123, 232, 1) 71%, rgba(42, 135, 249, 1) 88%, rgba(44, 140, 255, 0.92) 100%);
+
 	/* Container Padding */
 
 	--container-top-padding: 40px;
@@ -36,7 +50,7 @@
 	--paragraph-bottom-margin: 1rem;
 
 	/* Section */
-	--section-width: 1680px;
+	--section-width: 1568px;
 	--section-horizontal-padding: var(--container-left-padding);
 	--side-offset: max(calc((100% - var(--section-width)) / 2 + var(--section-horizontal-padding)), var(--section-horizontal-padding));
 }

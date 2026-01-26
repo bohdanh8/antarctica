@@ -1,29 +1,24 @@
 <?php
 $slide = $args; // Get slide array data that was passed on.
 ?>
-<div class="relative h-full px-6 lg:px-8 py-4 lg:py-32  ease-btm" data-scroll>
+<div class="px-0 pt-12 pb-6 lg:pb-[4.5rem] ease-btm" data-scroll>
 
-    <div class="absolute top-0 right-0 bottom-0 left-0 z-0 backdrop">
-        <?php echo get_attachment_fallback($slide['image']); ?>
-    </div><!-- .backdrop -->
-
-    <div class="absolute top-0 right-0 bottom-0 left-0 z-10 bg-gray-900/60"></div>
-
-    <div class="z-50 relative text-center container">
+    <div class="text-left container pt-0 pb-12 lg:pb-[4.75rem]">
         <?php if (!empty($slide['heading'])): ?>
-            <h2 class="font-bold text-white text-4xl tracking-tight sm:text-6xl">
+            <h1 class="font-light my-0 text-navy-blue">
                 <?php echo esc_html($slide['heading']); ?>
-            </h2>
+            </h1>
         <?php endif; ?>
 
         <?php if (!empty($slide['text'])): ?>
-            <p class="mt-6 text-gray-300 text-lg leading-8">
+            <h4 class="font-light mt-12 mb-0 text-navy-blue max-w-[67.688rem]">
                 <?php echo wp_kses_post($slide['text']); ?>
-            </p>
-        <?php endif; ?>
-
-        <?php if (!empty($slide["button"])): ?>
-            <?php echo get_button($slide["button"], "button") ?>
+            </h4>
         <?php endif; ?>
     </div>
+
+    <div class="h-[755px]">
+        <?php echo get_attachment_fallback($slide['image']); ?>
+    </div>
+
 </div>
