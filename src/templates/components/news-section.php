@@ -7,13 +7,13 @@ $layout       = !empty($news_section["layout"]) ? $news_section["layout"] : '';
 ?>
 
 <?php if ($heading || $text): ?>
-    <div class="container">
+    <div class="container pt-36 pb-12">
         <?php if ($heading): ?>
-            <h2 class="ease-left" data-scroll><?php echo esc_html($heading); ?></h2>
+            <h2 class="ease-left mt-0 mb-6 font-light text-navy-blue max-w-[30.8rem]" data-scroll><?php echo esc_html($heading); ?></h2>
         <?php endif; ?>
 
         <?php if ($text): ?>
-            <h6 class="ease-left" data-scroll><?php echo wp_kses_post($text); ?></h6>
+            <p class="ease-left my-0 font-light text-navy-blue" data-scroll><?php echo wp_kses_post($text); ?></p>
         <?php endif; ?>
     </div>
 <?php endif; ?>
@@ -40,13 +40,13 @@ $news            = new WP_Query($news_args); ?>
 <?php endif;
 wp_reset_query(); ?>
 
-<div class="py-8 ease-left container" data-scroll>
+<div class="pb-36 pt-12 ease-left container flex items-center justify-between" data-scroll>
+    <a href="<?php echo esc_url(get_the_permalink(get_option('page_for_posts'))); ?>"
+       class="button button-alt"><?php echo esc_html($button_text); ?>
+    </a>
     <?php if ($layout === "slider"): ?>
-        <div class="flex gap-x-8 mb-8 swiper-nav">
+        <div class="flex gap-x-8 swiper-nav">
             <?php get_component('swiper-nav', ['prefix' => 'news']); ?>
         </div>
     <?php endif; ?>
-
-    <a href="<?php echo esc_url(get_the_permalink(get_option('page_for_posts'))); ?>"
-       class="button button-alt"><?php echo esc_html($button_text); ?></a>
 </div>

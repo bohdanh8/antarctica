@@ -17,8 +17,11 @@ $slide = $args; // Get slide array data that was passed on.
         <?php endif; ?>
     </div>
 
-    <div class="h-[755px]">
+    <div class="h-[755px] relative">
         <?php echo get_attachment_fallback($slide['image']); ?>
+        <div class="svg-image absolute top-0 left-0 z-30 h-full w-full [&_svg]:w-full">
+            <?php echo $slide['svg_image_code']; ?>
+        </div>
     </div>
 
 </div>
