@@ -4,18 +4,18 @@ import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
 
 gsap.registerPlugin(MotionPathPlugin, DrawSVGPlugin);
 
-let paths = splitPaths("#hero-path");
+let heroPaths = splitPaths("#hero-path");
 
 let duration = 3,
     distance = 0,
     tl = gsap.timeline();
-paths.forEach(segment => distance += segment.getTotalLength());
-paths.forEach(segment => {
+heroPaths.forEach(segment => distance += segment.getTotalLength());
+heroPaths.forEach(segment => {
     tl.from(segment, {
         drawSVG: 0,
         ease: "none",
-        duration: duration * (segment.getTotalLength() / distance)
-    });
+        duration: 2
+    },"<");
 });
 
 function splitPaths(paths) {
@@ -42,3 +42,16 @@ function splitPaths(paths) {
     }
     return newPaths;
 }
+
+let accordionPaths = splitPaths('#accordion-path');
+let accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach((item) => {
+    item.addEventListener('click', () => {
+            const anyActive = Array.from(accordionItems).some(i => i.classList.contains('is-active'));
+
+            accordionPaths.forEach((path) => {
+                path.classList.toggle('active', anyActive);
+            });
+    });
+});

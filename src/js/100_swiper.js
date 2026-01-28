@@ -68,8 +68,8 @@ if ( swiperNews ) {
 		modules: [Navigation],
 		loop: false,
 		grabCursor: true,
-		slidesPerView: 3.25,
-		spaceBetween: 50,
+		slidesPerView: 2,
+		spaceBetween: 24,
 		navigation: {
 			nextEl: '.swiper-btn-next-news',
 			prevEl: '.swiper-btn-prev-news',
@@ -81,11 +81,11 @@ if ( swiperNews ) {
 			},
 			1024: {
 				spaceBetween: 20,
-				slidesPerView: 2.25,
+				slidesPerView: 2,
 			},
 			1440: {
-				spaceBetween: 50,
-				slidesPerView: 3.25,
+				spaceBetween: 24,
+				slidesPerView: 2,
 			},
 		},
 	} );

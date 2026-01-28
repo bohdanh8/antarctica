@@ -1,0 +1,1 @@
+<?php get_component( "map_section" ); ?>

@@ -247,15 +247,24 @@
 
     /* Buttons */
     .button {
-        @apply inline-block overflow-hidden rounded-none border border-solid border-white bg-transparent px-5 py-3.5 font-bold tracking-normal text-white transition duration-500;
-        @apply relative !z-10 before:absolute before:left-0 before:top-0 before:!-z-10 before:h-full before:w-full before:-translate-x-full before:bg-white before:transition before:duration-500 before:will-change-transform;
-        @apply hover:text-black hover:before:translate-x-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900;
+        @apply inline-block overflow-hidden rounded-none border border-solid border-navy-blue bg-transparent px-5 py-3.5 font-medium tracking-normal text-navy-blue transition duration-500;
+        @apply relative !z-10 before:absolute before:left-0 before:top-0 before:!-z-10 before:h-full before:w-full before:-translate-x-full before:bg-navy-blue before:transition before:duration-500 before:will-change-transform;
+        @apply hover:text-white hover:before:translate-x-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900;
+        @apply after:relative after:inline-block after:w-[1.375rem] after:h-[0.625rem] after:ml-4 after:bg-[url(/src/images/arrow-right.svg)] after:bg-contain after:bg-no-repeat after:bg-center hover:after:bg-[url(/src/images/arrow-right-alt.svg)] after:duration-500;
     }
 
     .button-alt {
-        @apply border-black text-black before:bg-black;
-        @apply hover:text-white;
+        @apply border-white text-white before:bg-transparent;
+        @apply hover:text-navy-blue hover:bg-white;
+        @apply before:bg-white after:bg-[url(/src/images/arrow-right-alt.svg)];
+        @apply hover:after:bg-[url(/src/images/arrow-right.svg)];
     }
+
+    .accordion-button {
+        @apply relative block bottom-0 left-0 after:absolute after:w-0 after:h-[3px] after:bg-[image:var(--gradient-45)] after:will-change-[width] after:duration-500 group-[.is-active]/accordion-item:after:w-[110%] after:bottom-[-1px] after:left-0;
+        @apply before:absolute before:z-10 before:w-6 before:h-6 before:bg-[image:var(--gradient-45)] before:rounded-[50%] before:right-[100%] before:will-change-[right] group-[.is-active]/accordion-item:before:right-[-10%] before:duration-500 before:top-0 before:translate-y-[-50%] before:scale-0 group-[.is-active]/accordion-item:before:scale-100;
+    }
+
 
     .clearfix::after {
         content: '';

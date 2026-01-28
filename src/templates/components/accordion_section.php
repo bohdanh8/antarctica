@@ -41,7 +41,7 @@ if ($accordion) : ?>
                     </h4>
                 <?php endif; ?>
             </div>
-            <div class="pt-12 border-t border-[#96C5D9] grid grid-cols-2">
+            <div class="pt-12 border-t border-[#96C5D9] grid grid-cols-1 md:grid-cols-2">
                 <div class="accordion accordion-container accordions-list">
                     <?php if (!empty($accordion_title)): ?>
                         <h3 class="font-medium text-navy-blue mb-12 ease-left" data-scroll>
@@ -49,12 +49,13 @@ if ($accordion) : ?>
                         </h3>
                     <?php endif; ?>
                     <?php foreach ($accordion as $accordion_item) : ?>
-                        <div class="group/accordion-item mb-7 sm:mb-8 last:mb-0 ease-btm accordion-item accordion-button max-w-[42rem]" data-scroll>
+                        <div class="group/accordion-item mb-7 sm:mb-8 last:mb-0 ease-btm accordion-item accordion-button max-w-full md:max-w-[42rem]" data-scroll>
                             <div class="group/accordion-header accordion-header">
                                 <h3 class="border-current border-b">
-                                    <button class="h3 font-light text-navy-blue opacity-50 flex justify-between items-center pb-4 gap-2.5 pr-4 sm:pr-2.5 outline-none w-full text-left accordion-trigger duration-500 group-[.is-active]/accordion-item:text-bright-blue group-[.is-active]/accordion-item:opacity-100">
+                                    <button class="h3 relative font-light text-navy-blue opacity-50 flex justify-between items-center pb-4 gap-2.5 pr-4 sm:pr-2.5 outline-none w-full text-left accordion-trigger duration-500 group-[.is-active]/accordion-item:text-bright-blue group-[.is-active]/accordion-item:opacity-100">
                                         <?php echo esc_html($accordion_item['heading']) ?? ''; ?>
                                     </button>
+                                    <span class="accordion-button w-full"></span>
                                 </h3>
                             </div>
                             <div class="accordion-body">
@@ -67,7 +68,7 @@ if ($accordion) : ?>
                         </div>
                     <?php endforeach; ?>
                 </div>
-                <div class="accordion-svg flex justify-end ease-right" data-scroll>
+                <div class="accordion-svg hidden md:flex justify-end ease-right" data-scroll>
                     <?php echo $accordion_svg_code; ?>
                 </div>
             </div>

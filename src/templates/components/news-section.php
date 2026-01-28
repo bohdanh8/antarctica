@@ -1,5 +1,6 @@
 <?php
 $news_section = get_sub_field("news_section");
+$eyebrow      = !empty($news_section["eyebrow"]) ? $news_section["eyebrow"] : '';
 $heading      = !empty($news_section["heading"]) ? $news_section["heading"] : '';
 $text         = !empty($news_section["text"]) ? $news_section["text"] : '';
 $button_text  = !empty($news_section["button_text"]) ? $news_section["button_text"] : __('View All News', 'prosekwptheme');
@@ -8,6 +9,10 @@ $layout       = !empty($news_section["layout"]) ? $news_section["layout"] : '';
 
 <?php if ($heading || $text): ?>
     <div class="container pt-36 pb-12">
+        <?php if ($heading): ?>
+            <p class="ease-left mt-0 mb-12 pt-4 text-off-black uppercase font-bold border-t border-divider-light-line" data-scroll><?php echo esc_html($eyebrow); ?></p>
+        <?php endif; ?>
+
         <?php if ($heading): ?>
             <h2 class="ease-left mt-0 mb-6 font-light text-navy-blue max-w-[30.8rem]" data-scroll><?php echo esc_html($heading); ?></h2>
         <?php endif; ?>
@@ -40,9 +45,9 @@ $news            = new WP_Query($news_args); ?>
 <?php endif;
 wp_reset_query(); ?>
 
-<div class="pb-36 pt-12 ease-left container flex items-center justify-between" data-scroll>
+<div class="flex-col-reverse items-start gap-4 pb-36 pt-12 ease-left container flex sm:flex-row sm:items-center sm:justify-between" data-scroll>
     <a href="<?php echo esc_url(get_the_permalink(get_option('page_for_posts'))); ?>"
-       class="button button-alt"><?php echo esc_html($button_text); ?>
+       class="button"><?php echo esc_html($button_text); ?>
     </a>
     <?php if ($layout === "slider"): ?>
         <div class="flex gap-x-8 swiper-nav">
