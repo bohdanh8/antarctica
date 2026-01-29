@@ -7,7 +7,7 @@
 				</a>
 				
 				<div id="mobile-menu" class="max-lg:drilldown-menu flex max-lg:flex-col lg:items-center lg:justify-center gap-6">
-					<div class="lg:ml-6 lg:flex group/deskop-menu">
+					<div class="lg:ml-6 lg:flex group/deskop-menu [&_a]:multi-underline-1 [&_a]:cursor-pointer [&_a]:pointer-events-auto">
 						<?php
 						wp_nav_menu( [
 							'theme_location' => 'primary',

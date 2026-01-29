@@ -8,7 +8,7 @@
             "name": "header_section_edit",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='\/wp-content\/uploads\/prosek-assets\/acf-images\/header-section.jpg' style='width:100%' \/>",
+            "instructions": "<img src='https:\/\/antarctica.local\/wp-content\/uploads\/prosek-assets\/acf-images\/header_section_edit.png?v=1752239648' style='width:100%' alt=''\/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -66,7 +66,7 @@
             "name": "footer_section_edit",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='\/wp-content\/uploads\/prosek-assets\/acf-images\/footer-section.jpg' style='width:100%' \/>",
+            "instructions": "<img src='https:\/\/antarctica.local\/wp-content\/uploads\/prosek-assets\/acf-images\/footer_section_edit.png?v=1752238918' style='width:100%' alt=''\/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -137,6 +137,48 @@
                     "append": ""
                 },
                 {
+                    "key": "field_697b2db8fe60e",
+                    "label": "Additional Links",
+                    "name": "additional_links",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "row",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_697b2dddfe60f",
+                            "label": "Link",
+                            "name": "link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "allow_in_bindings": 0,
+                            "parent_repeater": "field_697b2db8fe60e"
+                        }
+                    ]
+                },
+                {
                     "key": "field_64da632c40e2f",
                     "label": "Social Icons",
                     "name": "",
@@ -190,6 +232,27 @@
                     },
                     "default_value": "",
                     "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_697b2c8655a18",
+                    "label": "LinkedIn Link",
+                    "name": "linkedin_link",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 1,
                     "placeholder": "",
                     "prepend": "",
                     "append": ""
@@ -253,6 +316,156 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": ""
+                },
+                {
+                    "key": "field_697b2cb355a19",
+                    "label": "Locations",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0,
+                    "selected": 0
+                },
+                {
+                    "key": "field_697b2d2355a1f",
+                    "label": "Contact Emails",
+                    "name": "contact_emails",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "tabs": "all",
+                    "toolbar": "basic",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_697b2cdd55a1b",
+                    "label": "Locations Title",
+                    "name": "locations_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_697b2ccc55a1a",
+                    "label": "Locations",
+                    "name": "locations",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "row",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_697b2cf955a1c",
+                            "label": "Country",
+                            "name": "country",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_697b2ccc55a1a"
+                        },
+                        {
+                            "key": "field_697b2d0355a1d",
+                            "label": "Address",
+                            "name": "address",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "",
+                            "parent_repeater": "field_697b2ccc55a1a"
+                        },
+                        {
+                            "key": "field_697b2d0f55a1e",
+                            "label": "Phone",
+                            "name": "phone",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_697b2ccc55a1a"
+                        }
+                    ]
                 }
             ]
         },
@@ -262,7 +475,7 @@
             "name": "cookie_consent_banner",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='\/wp-content\/uploads\/prosek-assets\/acf-images\/cookie-consent-banner.jpg' style='width:100%' \/>",
+            "instructions": "<img src='https:\/\/antarctica.local\/wp-content\/uploads\/prosek-assets\/acf-images\/cookie_consent_banner.png?v=1752239581' style='width:100%' alt=''\/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -342,7 +555,7 @@
             "name": "404_page",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='\/wp-content\/uploads\/prosek-assets\/acf-images\/404-page.jpg' style='width:100%' \/>",
+            "instructions": "<img src='https:\/\/antarctica.local\/wp-content\/uploads\/prosek-assets\/acf-images\/404_page.png?v=1752239404' style='width:100%' alt=''\/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -422,7 +635,7 @@
             "name": "cta_banner",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='\/wp-content\/uploads\/prosek-assets\/acf-images\/custom-options.jpg' style='width:100%' \/>",
+            "instructions": "<img src='https:\/\/antarctica.local\/wp-content\/uploads\/prosek-assets\/acf-images\/cta_banner.png?v=1752239481' style='width:100%' alt=''\/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -526,7 +739,7 @@
             "name": "modal",
             "aria-label": "",
             "type": "group",
-            "instructions": "<img src='\/wp-content\/uploads\/prosek-assets\/acf-images\/custom-options.jpg' style='width:100%' \/>",
+            "instructions": "<img src='https:\/\/antarctica.local\/wp-content\/uploads\/prosek-assets\/acf-images\/modal.png?v=1752239480' style='width:100%' alt=''\/>",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -1429,5 +1642,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1732888690
+    "display_title": "",
+    "modified": 1769681346
 }

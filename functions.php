@@ -438,3 +438,15 @@ function prsk_filter_distribution(array $facets, array $location, object $search
 
     return $html;
 }
+
+
+add_filter( 'acf/fields/wysiwyg/toolbars' , function( $toolbars ) {
+    // Add to the 'Full' toolbar, row 2
+    $toolbars['Full'][2][] = 'superscript';
+    $toolbars['Full'][2][] = 'subscript';
+
+    // Add to the 'Basic' toolbar, row 1
+    $toolbars['Basic'][1][] = 'superscript';
+
+    return $toolbars;
+});

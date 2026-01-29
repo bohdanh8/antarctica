@@ -1041,6 +1041,27 @@
             "layout": "row",
             "sub_fields": [
                 {
+                    "key": "field_697b8bbb523e8",
+                    "label": "SVG Image Columns",
+                    "name": "svg_image_columns",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": ""
+                },
+                {
                     "key": "field_6977998c3bcfd",
                     "label": "Columns",
                     "name": "columns",
@@ -1460,5 +1481,5 @@
     "description": "",
     "show_in_rest": 0,
     "display_title": "",
-    "modified": 1769606107
+    "modified": 1769705073
 }
